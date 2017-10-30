@@ -12,11 +12,12 @@ Add bad-java-test-app to your tomcat server
 ### Docker
 
 1. [Install Docker](https://docs.docker.com/engine/installation/)
-2. From the app root directory execute: 
+1. From the app root directory execute: 
 
 ```sh
+$ /build.sh
 $ docker build -t bad-java-test-app .
-$ docker run -it --rm -p 8080:8080 bad-java-test-app 
+$ docker run -d --rm -p 8080:8080 bad-java-test-app 
 ```
 
 ## Usage
