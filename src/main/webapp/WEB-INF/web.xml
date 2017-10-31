@@ -12,12 +12,12 @@
   </description>
 
   <servlet>
-    <servlet-name>HelloServlet</servlet-name>
-    <servlet-class>edu.mayo.ima.ccs.HelloWorld</servlet-class>
+    <servlet-name>BadServlet</servlet-name>
+    <servlet-class>edu.mayo.dcis.BadServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>HelloServlet</servlet-name>
-    <url-pattern>/hello</url-pattern>
+    <servlet-name>BadServlet</servlet-name>
+    <url-pattern>/behave</url-pattern>
   </servlet-mapping>
 </web-app>
