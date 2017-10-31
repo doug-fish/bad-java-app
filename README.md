@@ -31,5 +31,8 @@ curl localhost:8080/bad-java-test-app/behave; sleep 3;done`
 To initiate leaking issue a request with query string of "leak", like `curl
 localhost:8080/bad-java-test-app/behave?leak`
 
-To stop leaking issue a request with a query string of "behave", like `curl
+To initiate slowness issue a request with query string of "slow", like `curl
+localhost:8080/bad-java-test-app/behave?slow`
+
+To stop leaking and slowness issue a request with a query string of "behave", like `curl
 localhost:8080/bad-java-test-app/behave?behave`
