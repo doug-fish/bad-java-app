@@ -68,13 +68,13 @@ public class BadServlet extends HttpServlet{
     writer.println("<img src=\"images/Pivotal_Logo.png\">");
     writer.println("</td>");
     writer.println("<td>");
-    writer.println("<h1>Sample Application Servlet</h1>");
+    writer.println("<h1>Test Application Servlet</h1>");
     writer.println("</td>");
     writer.println("</tr>");
 
     writer.println("<tr>");
     writer.println("<td>");
-    writer.println("servlet id");
+    writer.println("Servlet Id");
     writer.println("</td>");
     writer.println("<td>");
     writer.println(this.hashCode());

@@ -18,6 +18,6 @@
 
   <servlet-mapping>
     <servlet-name>BadServlet</servlet-name>
-    <url-pattern>/behave</url-pattern>
+    <url-pattern>/test</url-pattern>
   </servlet-mapping>
 </web-app>
