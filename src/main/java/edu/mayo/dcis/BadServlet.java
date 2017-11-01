@@ -74,6 +74,24 @@ public class BadServlet extends HttpServlet{
 
     writer.println("<tr>");
     writer.println("<td>");
+    writer.println("servlet id");
+    writer.println("</td>");
+    writer.println("<td>");
+    writer.println(this.hashCode());
+    writer.println("</td>");
+    writer.println("</tr>");
+
+    writer.println("<tr>");
+    writer.println("<td>");
+    writer.println("Session Request lifetime");
+    writer.println("</td>");
+    writer.println("<td>");
+    writer.println(session.getAttribute("sessionLife"));
+    writer.println("</td>");
+    writer.println("</tr>");
+
+    writer.println("<tr>");
+    writer.println("<td>");
     writer.println("Mode");
     writer.println("</td>");
     writer.println("<td>");
@@ -92,12 +110,13 @@ public class BadServlet extends HttpServlet{
 
     writer.println("<tr>");
     writer.println("<td>");
-    writer.println("Session Request lifetime");
+    writer.println("Delay");
     writer.println("</td>");
     writer.println("<td>");
-    writer.println(session.getAttribute("sessionLife"));
+    writer.println(this.delay);
     writer.println("</td>");
     writer.println("</tr>");
+
     writer.println("</table>");
 
     writer.println("</body>");
